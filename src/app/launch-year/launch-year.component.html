@@ -1,0 +1,15 @@
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let rocket of rockets">
+    <p class="flight-no">{{rocket["flight_number"]}}</p>
+    <h2 style="color: black; margin: 0px;">{{rocket["rocket"]["rocket_name"]}}<i>(id: {{rocket["rocket"]["rocket_id"]}})</i></h2>
+    <p style="font-size: 16px;margin: 0px;">Rocket type: {{rocket["rocket"]["rocket_type"]}}</p> 
+    <p style="font-size: 16px;margin: 0px;">Mission:  {{rocket["mission_name"]}}</p>
+    <p style="font-size: 14px;margin: 10px 0px 0px 0px;">Launched from {{rocket["launch_site"]["site_name"]}}<i>({{rocket["launch_site"]["site_id"]}})</i></p>
+    <p style="font-size: 14px; margin: 0px;">Date: {{rocket["launch_date_local"]}}</p>
+    <p *ngIf="rocket['launch_success']" style="color:green;font-size: 14px;margin: 10px 0px 0px 0px;">launch Successfull</p>
+    <p *ngIf="rocket['launch_success'] == false" style="color:red; font-size: 14px;margin: 10px 0px 0px 0px;">launch Unsuccessfull</p>
+    <p style="font-size: 14px;margin: 0px;">{{rocket["details"]}}</p>
+    <!-- <p style="font-size: 14px;margin: 0px;">Reason: {{rocket["launch_failure_details"]["reason"]}}</p> -->
+
+  </div>
+</div>

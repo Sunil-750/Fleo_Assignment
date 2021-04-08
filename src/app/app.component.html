@@ -1,0 +1,36 @@
+<div class="header">
+    <h3>Space X</h3>
+</div>
+<div class="direction">
+
+  <div class="topnav" id="myTopnav">
+    <input type="number" placeholder="Search a launch year" [(ngModel)] = "year" (submit)="toLaunchYear()">
+    <button type="submit" (click) = "toLaunchYear()">Search</button>
+    <a class="active" (click)="toAllLaunch()">All</a>
+    <a (click)="toSuccessfulLaunch()">SuccessFully Launch</a>
+    <a (click)="toSuccessFullLand()">Successfully Land</a>
+    <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+      Menu
+    </a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+  </div>
+  
+  
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- <div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div> -->
