@@ -19,12 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "https://code.jquery.com/jquery-3.6.0.js"
+        "styles.css"
       ],
       "scripts": [
         "assets/script.js",
-        "node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
